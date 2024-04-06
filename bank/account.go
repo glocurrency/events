@@ -1,4 +1,4 @@
-package events
+package bank
 
 import (
 	"time"
