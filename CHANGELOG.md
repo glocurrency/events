@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/glocurrency/events/compare/v0.2.0...v0.3.0) (2024-04-15)
+
+
+### Features
+
+* use uuid ([73f4b43](https://www.github.com/glocurrency/events/commit/73f4b431d256c72c5db1193cba9fd43a0033bf46))
+
 ## [0.2.0](https://www.github.com/glocurrency/events/compare/v0.1.1...v0.2.0) (2024-04-15)
 
 
