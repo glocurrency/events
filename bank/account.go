@@ -6,7 +6,7 @@ import (
 	"github.com/google/uuid"
 )
 
-const AccountOpenEvent = "account-updated"
+const AccountOpenEvent = "account-open"
 const AccountUpdatedEvent = "account-updated"
 const AccountClosedEvent = "account-closed"
 
