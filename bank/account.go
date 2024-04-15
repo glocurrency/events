@@ -6,27 +6,33 @@ import (
 	"github.com/google/uuid"
 )
 
+const AccountOpenEvent = "account-updated"
+const AccountUpdatedEvent = "account-updated"
+const AccountClosedEvent = "account-closed"
+
 type AccountOpen struct {
 	ID         uuid.UUID
-	Source     string
+	Provider   string
 	Name       string
 	Owner      string
 	Identifier string
-	Date       time.Time
+	Currencies []string
+	Timestamp  time.Time
 }
 
 type AccountUpdated struct {
 	ID         uuid.UUID
-	Source     string
+	Provider   string
 	Name       string
 	Owner      string
 	Identifier string
-	Date       time.Time
+	Currencies []string
+	Timestamp  time.Time
 }
 
 type AccountClosed struct {
-	ID     uuid.UUID
-	Source string
-	Reason string
-	Date   time.Time
+	ID        uuid.UUID
+	Provider  string
+	Reason    string
+	Timestamp time.Time
 }
