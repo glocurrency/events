@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.0](https://www.github.com/glocurrency/events/compare/v0.1.1...v0.2.0) (2024-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* missing event name
+* typo
+
+### Bug Fixes
+
+* missing event name ([e3117e8](https://www.github.com/glocurrency/events/commit/e3117e83a3138caf9456f8e55d5d7e062459c3cb))
+* typo ([4d9cbc6](https://www.github.com/glocurrency/events/commit/4d9cbc601fd96c6c5866d83634891ab2e347cb32))
+
 ### [0.1.1](https://www.github.com/glocurrency/events/compare/v0.1.0...v0.1.1) (2024-04-15)
 
 
