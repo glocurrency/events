@@ -23,9 +23,9 @@ type FxCreated struct {
 
 	Rate float64
 
-	SellAccountIdentifier   string
-	BuyAccountIdentifier    string
-	MarginAccountIdentifier string
+	SellAccountID   uuid.UUID
+	BuyAccountID    uuid.UUID
+	MarginAccountID uuid.NullUUID
 
 	ExternalIdentifier string
 	Timestamp          time.Time
@@ -44,9 +44,9 @@ type FxSettled struct {
 
 	Rate float64
 
-	SellAccountIdentifier   string
-	BuyAccountIdentifier    string
-	MarginAccountIdentifier string
+	SellAccountID   uuid.UUID
+	BuyAccountID    uuid.UUID
+	MarginAccountID uuid.NullUUID
 
 	ExternalIdentifier string
 	Timestamp          time.Time

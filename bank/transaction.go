@@ -11,31 +11,41 @@ const TransactionSettledEvent = "transaction-settled"
 const TransactionFailedEvent = "transaction-failed"
 
 type TransactionCreated struct {
-	ID                        uuid.UUID
-	Provider                  string
-	Currency                  string
-	Amount                    float64
-	AccountIdentifier         string
-	AccountOwner              string
+	ID       uuid.UUID
+	Provider string
+
+	AccountID         uuid.UUID
+	AccountIdentifier string
+	AccountOwner      string
+
+	OppositeAccountID         uuid.NullUUID
 	OppositeAccountIdentifier string
 	OppositeAccountOwner      string
-	Reference                 string
-	ExternalIdentifier        string
-	Timestamp                 time.Time
+
+	Currency           string
+	Amount             float64
+	Reference          string
+	ExternalIdentifier string
+	Timestamp          time.Time
 }
 
 type TransactionSettled struct {
-	ID                        uuid.UUID
-	Provider                  string
-	Currency                  string
-	Amount                    float64
-	AccountIdentifier         string
-	AccountOwner              string
+	ID       uuid.UUID
+	Provider string
+
+	AccountID         uuid.UUID
+	AccountIdentifier string
+	AccountOwner      string
+
+	OppositeAccountID         uuid.NullUUID
 	OppositeAccountIdentifier string
 	OppositeAccountOwner      string
-	Reference                 string
-	ExternalIdentifier        string
-	Timestamp                 time.Time
+
+	Currency           string
+	Amount             float64
+	Reference          string
+	ExternalIdentifier string
+	Timestamp          time.Time
 }
 
 type TransactionFailed struct {
