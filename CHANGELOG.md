@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.1.1](https://www.github.com/glocurrency/events/compare/v0.1.0...v0.1.1) (2024-04-15)
+
+
+### Bug Fixes
+
+* 1.22 ([21f2338](https://www.github.com/glocurrency/events/commit/21f233889fdf9ac4bf8d4a77e0de016373bfec6f))
+
 ## 0.1.0 (2024-04-15)
 
 
