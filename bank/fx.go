@@ -18,14 +18,14 @@ type FxCreated struct {
 	BuyAmount      float64
 	SellCurrency   string
 	SellAmount     float64
-	MarginCurrency string
-	MarginAmount   float64
+	MarginCurrency *string
+	MarginAmount   *float64
 
 	Rate float64
 
-	SellAccountID   uuid.UUID
-	BuyAccountID    uuid.UUID
-	MarginAccountID uuid.NullUUID
+	SellAccountIdentifier   string
+	BuyAccountIdentifier    string
+	MarginAccountIdentifier *string
 
 	ExternalIdentifier string
 	Timestamp          time.Time
@@ -39,14 +39,14 @@ type FxSettled struct {
 	BuyAmount      float64
 	SellCurrency   string
 	SellAmount     float64
-	MarginCurrency string
-	MarginAmount   float64
+	MarginCurrency *string
+	MarginAmount   *float64
 
 	Rate float64
 
-	SellAccountID   uuid.UUID
-	BuyAccountID    uuid.UUID
-	MarginAccountID uuid.NullUUID
+	SellAccountIdentifier   string
+	BuyAccountIdentifier    string
+	MarginAccountIdentifier *string
 
 	ExternalIdentifier string
 	Timestamp          time.Time

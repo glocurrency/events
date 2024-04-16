@@ -14,11 +14,9 @@ type TransactionCreated struct {
 	ID       uuid.UUID
 	Provider string
 
-	AccountID         uuid.UUID
 	AccountIdentifier string
 	AccountOwner      string
 
-	OppositeAccountID         uuid.NullUUID
 	OppositeAccountIdentifier string
 	OppositeAccountOwner      string
 
@@ -33,11 +31,9 @@ type TransactionSettled struct {
 	ID       uuid.UUID
 	Provider string
 
-	AccountID         uuid.UUID
 	AccountIdentifier string
 	AccountOwner      string
 
-	OppositeAccountID         uuid.NullUUID
 	OppositeAccountIdentifier string
 	OppositeAccountOwner      string
 
