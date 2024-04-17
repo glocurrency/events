@@ -11,7 +11,7 @@ const FxSettledEvent = "fx-settled"
 const FxFailedEvent = "fx-failed"
 
 type FxCreated struct {
-	ID       uuid.UUID
+	ID       uuid.NullUUID
 	Provider string
 
 	BuyCurrency    string
@@ -32,7 +32,7 @@ type FxCreated struct {
 }
 
 type FxSettled struct {
-	ID       uuid.UUID
+	ID       uuid.NullUUID
 	Provider string
 
 	BuyCurrency    string
@@ -53,7 +53,7 @@ type FxSettled struct {
 }
 
 type FxFailed struct {
-	ID                 uuid.UUID
+	ID                 uuid.NullUUID
 	Provider           string
 	Reason             string
 	ExternalIdentifier string

@@ -45,7 +45,7 @@ type TransactionSettled struct {
 }
 
 type TransactionFailed struct {
-	ID                 uuid.UUID
+	ID                 uuid.NullUUID
 	Provider           string
 	Reason             string
 	ExternalIdentifier string
