@@ -4,7 +4,7 @@ Description and payloads for common events.
 ## Installation
 
 ```bash
-go get github.com/glocurrency/events
+go get -u github.com/glocurrency/events
 ```
 
 ## Authors
