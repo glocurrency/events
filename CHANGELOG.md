@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.6.0](https://www.github.com/glocurrency/events/compare/v0.5.0...v0.6.0) (2024-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* change groups
+
+### Features
+
+* change groups ([8798fa9](https://www.github.com/glocurrency/events/commit/8798fa9c5d862fd2788c0a3b244836527f5c3522))
+* payment states ([cfca438](https://www.github.com/glocurrency/events/commit/cfca438fb34011a589daa11e9647857a093efdc6))
+* payments and compliance ([ed0c2e3](https://www.github.com/glocurrency/events/commit/ed0c2e3394fd50b2fb4a0aba31d0c48385b3770f))
+
+
+### Bug Fixes
+
+* namespace ([6f221c8](https://www.github.com/glocurrency/events/commit/6f221c81dadb71bdedc38a1ea6119570482a6a9d))
+
 ## [0.5.0](https://www.github.com/glocurrency/events/compare/v0.4.0...v0.5.0) (2024-04-17)
 
 
