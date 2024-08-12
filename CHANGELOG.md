@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.6.1](https://www.github.com/glocurrency/events/compare/v0.6.0...v0.6.1) (2024-08-12)
+
+
+### Bug Fixes
+
+* event payload ([6874e26](https://www.github.com/glocurrency/events/commit/6874e260422495d96ee60c673e1e6c56a771619b))
+
 ## [0.6.0](https://www.github.com/glocurrency/events/compare/v0.5.0...v0.6.0) (2024-08-12)
 
 
