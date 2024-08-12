@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.8.0](https://www.github.com/glocurrency/events/compare/v0.7.0...v0.8.0) (2024-08-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* not null
+
+### Bug Fixes
+
+* not null ([ffefd5b](https://www.github.com/glocurrency/events/commit/ffefd5bc123b10a430cfbf9905201ec3a88b40e4))
+
 ## [0.7.0](https://www.github.com/glocurrency/events/compare/v0.6.1...v0.7.0) (2024-08-12)
 
 
