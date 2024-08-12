@@ -12,22 +12,23 @@ const PaymentCompletedEvent = "payment-completed"
 const PaymentFailedEvent = "payment-failed"
 
 type PaymentComplianceRequired struct {
-	PaymentID uuid.NullUUID
+	PaymentID uuid.UUID
 	Sender    struct {
-		FirstName   string
-		LastName    string
-		DOB         time.Time
-		Country     string
-		County      string
-		PostCode    string
-		City        string
-		StreetLine1 string
-		StreetLine2 string
+		FirstName string
+		LastName  string
+		DOB       time.Time
+		Address   struct {
+			Country     string
+			County      string
+			PostCode    string
+			City        string
+			StreetLine1 string
+			StreetLine2 string
+		}
 	}
 	Recipient struct {
 		FirstName     string
 		LastName      string
-		Country       string
 		AccountNumber string
 		BankCode      string
 		SortCode      string
@@ -38,6 +39,14 @@ type PaymentComplianceRequired struct {
 		Phone         string
 		Provider      string
 		Email         string
+		Address       struct {
+			Country     string
+			County      string
+			PostCode    string
+			City        string
+			StreetLine1 string
+			StreetLine2 string
+		}
 	}
 	Currency  string
 	Amount    float64
@@ -46,19 +55,19 @@ type PaymentComplianceRequired struct {
 }
 
 type PaymentProcessing struct {
-	PaymentID uuid.NullUUID
+	PaymentID uuid.UUID
 	Reason    string
 	Timestamp time.Time
 }
 
 type PaymentCompleted struct {
-	PaymentID uuid.NullUUID
+	PaymentID uuid.UUID
 	Reason    string
 	Timestamp time.Time
 }
 
 type PaymentFailed struct {
-	PaymentID uuid.NullUUID
+	PaymentID uuid.UUID
 	Reason    string
 	Timestamp time.Time
 }
