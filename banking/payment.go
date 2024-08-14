@@ -12,8 +12,9 @@ const PaymentCompletedEvent = "payment-completed"
 const PaymentFailedEvent = "payment-failed"
 
 type PaymentComplianceRequired struct {
-	PaymentID uuid.UUID
-	Sender    struct {
+	PaymentID   uuid.UUID
+	PaymentType string
+	Sender      struct {
 		FirstName string
 		LastName  string
 		DOB       time.Time
@@ -27,25 +28,22 @@ type PaymentComplianceRequired struct {
 		}
 	}
 	Recipient struct {
-		FirstName     string
-		LastName      string
-		AccountNumber string
-		BankCode      string
-		SortCode      string
-		RoutingNumber string
-		IBAN          string
-		CLABE         string
-		BIC           string
-		Phone         string
-		Provider      string
-		Email         string
-		Address       struct {
-			Country     string
-			County      string
-			PostCode    string
-			City        string
-			StreetLine1 string
-			StreetLine2 string
+		FirstName string
+		LastName  string
+		Address   struct {
+			Country string
+		}
+		Details struct {
+			AccountNumber string
+			BankCode      string
+			SortCode      string
+			RoutingNumber string
+			IBAN          string
+			CLABE         string
+			BIC           string
+			Phone         string
+			Provider      string
+			Email         string
 		}
 	}
 	Currency  string
