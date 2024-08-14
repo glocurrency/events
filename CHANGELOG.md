@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.9.0](https://www.github.com/glocurrency/events/compare/v0.8.0...v0.9.0) (2024-08-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* payment type
+
+### Bug Fixes
+
+* payment type ([64b389a](https://www.github.com/glocurrency/events/commit/64b389a6c92411cb4ae67772d07a30a0141529a8))
+
 ## [0.8.0](https://www.github.com/glocurrency/events/compare/v0.7.0...v0.8.0) (2024-08-12)
 
 
