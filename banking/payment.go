@@ -19,7 +19,8 @@ type DocumentMedia struct {
 type IdentificationDocument struct {
 	Type       string
 	Number     string
-	ValidUntil time.Time
+	ValidFrom  *time.Time
+	ValidUntil *time.Time
 	Media      *DocumentMedia
 }
 
