@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://www.github.com/glocurrency/events/compare/v0.9.0...v0.10.0) (2024-09-06)
+
+
+### Features
+
+* doc ([180afa6](https://www.github.com/glocurrency/events/commit/180afa654a0e61f0f165555139791f867529e67a))
+
 ## [0.9.0](https://www.github.com/glocurrency/events/compare/v0.8.0...v0.9.0) (2024-08-14)
 
 
