@@ -11,6 +11,18 @@ const PaymentProcessingEvent = "payment-processing"
 const PaymentCompletedEvent = "payment-completed"
 const PaymentFailedEvent = "payment-failed"
 
+type DocumentMedia struct {
+	Mimetype string
+	Content  []byte
+}
+
+type IdentificationDocument struct {
+	Type       string
+	Number     string
+	ValidUntil time.Time
+	Media      *DocumentMedia
+}
+
 type PaymentComplianceRequired struct {
 	PaymentID   uuid.UUID
 	PaymentType string
@@ -26,6 +38,7 @@ type PaymentComplianceRequired struct {
 			StreetLine1 string
 			StreetLine2 string
 		}
+		Document *IdentificationDocument
 	}
 	Recipient struct {
 		FirstName string
