@@ -39,6 +39,8 @@ type PaymentComplianceRequired struct {
 			StreetLine1 string
 			StreetLine2 string
 		}
+		Currency string
+		Amount   float64
 		Document *IdentificationDocument
 	}
 	Recipient struct {
@@ -59,9 +61,9 @@ type PaymentComplianceRequired struct {
 			Provider      string
 			Email         string
 		}
+		Currency string
+		Amount   float64
 	}
-	Currency  string
-	Amount    float64
 	Reference string
 	Timestamp time.Time
 }
