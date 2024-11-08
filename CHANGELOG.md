@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.11.0](https://www.github.com/glocurrency/events/compare/v0.10.1...v0.11.0) (2024-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* sender and recipient have amounts
+
+### Features
+
+* sender and recipient have amounts ([644e844](https://www.github.com/glocurrency/events/commit/644e8446a9623f6051fdf80db2c80f9899574964))
+
 ### [0.10.1](https://www.github.com/glocurrency/events/compare/v0.10.0...v0.10.1) (2024-09-06)
 
 
