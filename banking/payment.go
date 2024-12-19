@@ -17,6 +17,7 @@ type DocumentMedia struct {
 }
 
 type IdentificationDocument struct {
+	Country    string
 	Type       string
 	Number     string
 	ValidFrom  *time.Time
@@ -24,14 +25,37 @@ type IdentificationDocument struct {
 	Media      *DocumentMedia
 }
 
+type Gender string
+
+const (
+	GenderMale   Gender = "MALE"
+	GenderFemale Gender = "FEMALE"
+)
+
+type Profession string
+
+const (
+	ProfessionAgriculture Profession = "AGRICULTURE"
+	ProfessionRetired     Profession = "RETURED"
+	// TODO: add more professions
+)
+
 type PaymentComplianceRequired struct {
 	PaymentID   uuid.UUID
 	PaymentType string
 	Sender      struct {
-		FirstName string
-		LastName  string
-		DOB       time.Time
-		Address   struct {
+		FirstName    string
+		LastName     string
+		DOB          time.Time
+		Phone        string
+		Email        string
+		Gender       Gender
+		Profession   Profession
+		PEP          bool
+		Citizenchip  string
+		BirthCountry string
+		BirthCity    string
+		Address      struct {
 			Country     string
 			County      string
 			PostCode    string
@@ -47,9 +71,14 @@ type PaymentComplianceRequired struct {
 		FirstName string
 		LastName  string
 		Address   struct {
-			Country string
+			Country     string
+			County      string
+			PostCode    string
+			City        string
+			StreetLine1 string
+			StreetLine2 string
 		}
-		Details struct {
+		PayoutDetails struct {
 			AccountNumber string
 			BankCode      string
 			SortCode      string
