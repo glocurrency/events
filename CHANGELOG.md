@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.0](https://www.github.com/glocurrency/events/compare/v0.12.0...v0.13.0) (2024-12-19)
+
+
+### Features
+
+* more types ([03d0fbe](https://www.github.com/glocurrency/events/commit/03d0fbe8d9067492841ddb9cda503900d2babadb))
+
 ## [0.12.0](https://www.github.com/glocurrency/events/compare/v0.11.0...v0.12.0) (2024-12-19)
 
 
