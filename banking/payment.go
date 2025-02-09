@@ -135,6 +135,10 @@ type PaymentComplianceRequired struct {
 		Currency string
 		Amount   float64
 	}
+	Checkout struct {
+		Provider          string
+		ProviderReference string
+	}
 	Reference string
 	Timestamp time.Time
 }
