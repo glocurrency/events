@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.15.0](https://www.github.com/glocurrency/events/compare/v0.14.0...v0.15.0) (2026-03-08)
+
+
+### Features
+
+* is internal ([d4bcb20](https://www.github.com/glocurrency/events/commit/d4bcb2070a88bba8cb1ad18960a1c32d3c7f54c4))
+
 ## [0.14.0](https://www.github.com/glocurrency/events/compare/v0.13.0...v0.14.0) (2025-02-09)
 
 
