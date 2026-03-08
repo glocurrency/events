@@ -24,6 +24,7 @@ type TransactionCreated struct {
 	Amount             float64
 	Reference          string
 	ExternalIdentifier string
+	IsInternal         bool
 	Timestamp          time.Time
 }
 
@@ -41,6 +42,7 @@ type TransactionSettled struct {
 	Amount             float64
 	Reference          string
 	ExternalIdentifier string
+	IsInternal         bool
 	Timestamp          time.Time
 }
 
@@ -49,5 +51,6 @@ type TransactionFailed struct {
 	Provider           string
 	Reason             string
 	ExternalIdentifier string
+	IsInternal         bool
 	Timestamp          time.Time
 }
