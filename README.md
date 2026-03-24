@@ -2,7 +2,7 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/glocurrency/events.svg)](https://pkg.go.dev/github.com/glocurrency/events)
 [![Go Report Card](https://goreportcard.com/badge/github.com/glocurrency/events)](https://goreportcard.com/report/github.com/glocurrency/events)
-[![Maintainability](https://api.codeclimate.com/v1/badges/bc9ba81f4c9d3bf77407/maintainability)](https://codeclimate.com/github/glocurrency/events/maintainability)
+[![codecov](https://codecov.io/gh/glocurrency/events/graph/badge.svg?token=49ZEE55F74)](https://codecov.io/gh/glocurrency/events)
 
 Description and payloads for common events.
 
