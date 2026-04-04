@@ -7,19 +7,39 @@ on:
     branches: [ main ]
 
 jobs:
-
-  build:
+  lint:
+    if: "!startsWith(github.head_ref, 'release-')"
     runs-on: ubuntu-latest
     timeout-minutes: 5
-
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-go@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: 'go.mod'
+      - uses: dominikh/staticcheck-action@v1
+        with:
+          version: '2026.1'
+          install-go: false
+  build:
+    if: "!startsWith(github.head_ref, 'release-')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-go@v6
       with:
         go-version-file: 'go.mod'
     - run: go build -v ./...
+  unit:
+    if: "!startsWith(github.head_ref, 'release-')"
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-go@v6
+      with:
+        go-version-file: 'go.mod'
     - run: go test -race -covermode=atomic -coverprofile=coverage.out -v ./...
-
     - uses: codecov/codecov-action@v5
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
